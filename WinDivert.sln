@@ -1,0 +1,256 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinDivert", "src\dll\windivert.vcxproj", "{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{B77DB1D2-14A3-4277-8900-EE13D06EC183}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "flowtrack", "src\examples\flowtrack\flowtrack.vcxproj", "{4493B085-375D-460D-BF41-2FEBF330876B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "webfilter", "src\examples\webfilter\webfilter.vcxproj", "{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netdump", "src\examples\netdump\netdump.vcxproj", "{8230865B-0822-4A96-9375-ADD303F286AD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netfilter", "src\examples\netfilter\netfilter.vcxproj", "{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "passthru", "src\examples\passthru\passthru.vcxproj", "{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "socketdump", "src\examples\socketdump\socketdump.vcxproj", "{B18478D8-A7BA-4B9B-985D-764C451AD3D3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "streamdump", "src\examples\streamdump\streamdump.vcxproj", "{995AFADC-C0E8-45B0-B17E-17FB9E922717}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windivertctl", "src\examples\windivertctl\windivertctl.vcxproj", "{A740E8AA-A0ED-49EB-B753-752556975A71}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "src\test\test.vcxproj", "{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "drivers", "drivers", "{2F04ED5D-AF4E-48A3-B009-9135681C3762}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinDivert", "src\sys\windivert.vcxproj", "{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{281C741C-43CF-433E-9399-A7F6B3B8A504}"
+	ProjectSection(SolutionItems) = preProject
+		targets\example.targets = targets\example.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libraries", "libraries", "{B99EC00E-8644-447C-A02E-FA7BDACD038B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7234A431-FAFB-4ECF-B65F-2803758EF9F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Builded Driver|Win32 = Debug Builded Driver|Win32
+		Debug Builded Driver|x64 = Debug Builded Driver|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release Builded Driver|Win32 = Release Builded Driver|Win32
+		Release Builded Driver|x64 = Release Builded Driver|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug Builded Driver|Win32.ActiveCfg = Debug|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug Builded Driver|Win32.Build.0 = Debug|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug Builded Driver|x64.ActiveCfg = Debug|x64
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug Builded Driver|x64.Build.0 = Debug|x64
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug|Win32.Build.0 = Debug|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug|x64.ActiveCfg = Debug|x64
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Debug|x64.Build.0 = Debug|x64
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release Builded Driver|Win32.ActiveCfg = Release|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release Builded Driver|Win32.Build.0 = Release|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release Builded Driver|x64.ActiveCfg = Release|x64
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release Builded Driver|x64.Build.0 = Release|x64
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release|Win32.ActiveCfg = Release|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release|Win32.Build.0 = Release|Win32
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release|x64.ActiveCfg = Release|x64
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B}.Release|x64.Build.0 = Release|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug|Win32.Build.0 = Debug|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug|x64.ActiveCfg = Debug|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Debug|x64.Build.0 = Debug|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release|Win32.ActiveCfg = Release|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release|Win32.Build.0 = Release|Win32
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release|x64.ActiveCfg = Release|x64
+		{4493B085-375D-460D-BF41-2FEBF330876B}.Release|x64.Build.0 = Release|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug|Win32.Build.0 = Debug|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug|x64.ActiveCfg = Debug|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Debug|x64.Build.0 = Debug|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release|Win32.ActiveCfg = Release|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release|Win32.Build.0 = Release|Win32
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release|x64.ActiveCfg = Release|x64
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08}.Release|x64.Build.0 = Release|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug|Win32.Build.0 = Debug|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug|x64.ActiveCfg = Debug|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Debug|x64.Build.0 = Debug|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release|Win32.ActiveCfg = Release|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release|Win32.Build.0 = Release|Win32
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release|x64.ActiveCfg = Release|x64
+		{8230865B-0822-4A96-9375-ADD303F286AD}.Release|x64.Build.0 = Release|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug|Win32.Build.0 = Debug|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug|x64.ActiveCfg = Debug|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Debug|x64.Build.0 = Debug|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release|Win32.ActiveCfg = Release|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release|Win32.Build.0 = Release|Win32
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release|x64.ActiveCfg = Release|x64
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E}.Release|x64.Build.0 = Release|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug|Win32.Build.0 = Debug|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug|x64.ActiveCfg = Debug|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Debug|x64.Build.0 = Debug|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release|Win32.ActiveCfg = Release|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release|Win32.Build.0 = Release|Win32
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release|x64.ActiveCfg = Release|x64
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90}.Release|x64.Build.0 = Release|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug|Win32.Build.0 = Debug|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug|x64.ActiveCfg = Debug|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Debug|x64.Build.0 = Debug|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release|Win32.ActiveCfg = Release|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release|Win32.Build.0 = Release|Win32
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release|x64.ActiveCfg = Release|x64
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3}.Release|x64.Build.0 = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug Builded Driver|Win32.ActiveCfg = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug Builded Driver|Win32.Build.0 = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug Builded Driver|x64.ActiveCfg = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug Builded Driver|x64.Build.0 = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug|Win32.ActiveCfg = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug|Win32.Build.0 = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug|x64.ActiveCfg = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Debug|x64.Build.0 = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release Builded Driver|Win32.ActiveCfg = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release Builded Driver|Win32.Build.0 = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release Builded Driver|x64.ActiveCfg = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release Builded Driver|x64.Build.0 = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release|Win32.ActiveCfg = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release|Win32.Build.0 = Release|Win32
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release|x64.ActiveCfg = Release|x64
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717}.Release|x64.Build.0 = Release|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug|Win32.Build.0 = Debug|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug|x64.ActiveCfg = Debug|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Debug|x64.Build.0 = Debug|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release|Win32.ActiveCfg = Release|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release|Win32.Build.0 = Release|Win32
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release|x64.ActiveCfg = Release|x64
+		{A740E8AA-A0ED-49EB-B753-752556975A71}.Release|x64.Build.0 = Release|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug Builded Driver|Win32.ActiveCfg = Debug Builded Driver|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug Builded Driver|Win32.Build.0 = Debug Builded Driver|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug Builded Driver|x64.ActiveCfg = Debug Builded Driver|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug Builded Driver|x64.Build.0 = Debug Builded Driver|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug|Win32.Build.0 = Debug|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug|x64.ActiveCfg = Debug|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Debug|x64.Build.0 = Debug|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release Builded Driver|Win32.ActiveCfg = Release Builded Driver|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release Builded Driver|Win32.Build.0 = Release Builded Driver|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release Builded Driver|x64.ActiveCfg = Release Builded Driver|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release Builded Driver|x64.Build.0 = Release Builded Driver|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release|Win32.ActiveCfg = Release|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release|Win32.Build.0 = Release|Win32
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release|x64.ActiveCfg = Release|x64
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD}.Release|x64.Build.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug Builded Driver|Win32.ActiveCfg = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug Builded Driver|Win32.Build.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug Builded Driver|Win32.Deploy.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug Builded Driver|x64.ActiveCfg = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug Builded Driver|x64.Build.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug Builded Driver|x64.Deploy.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug|Win32.ActiveCfg = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug|Win32.Build.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug|Win32.Deploy.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug|x64.ActiveCfg = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug|x64.Build.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Debug|x64.Deploy.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release Builded Driver|Win32.ActiveCfg = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release Builded Driver|Win32.Build.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release Builded Driver|Win32.Deploy.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release Builded Driver|x64.ActiveCfg = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release Builded Driver|x64.Build.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release Builded Driver|x64.Deploy.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release|Win32.ActiveCfg = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release|Win32.Build.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release|Win32.Deploy.0 = Release|Win32
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release|x64.ActiveCfg = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release|x64.Build.0 = Release|x64
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF}.Release|x64.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5DD4B36F-78A9-4BC5-9635-28005CA70C6B} = {B99EC00E-8644-447C-A02E-FA7BDACD038B}
+		{4493B085-375D-460D-BF41-2FEBF330876B} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{BF92EB7C-FEA2-4DB9-AB5F-AC54F70D1F08} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{8230865B-0822-4A96-9375-ADD303F286AD} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{B44AA74E-4B5D-4AFF-8BDD-19EC77EB359E} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{6D29383D-7CA8-45D5-8FFC-AB012A9B0D90} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{B18478D8-A7BA-4B9B-985D-764C451AD3D3} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{995AFADC-C0E8-45B0-B17E-17FB9E922717} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{A740E8AA-A0ED-49EB-B753-752556975A71} = {B77DB1D2-14A3-4277-8900-EE13D06EC183}
+		{C6CBFAAE-2D3D-4280-BA43-D52B44E32ADD} = {7234A431-FAFB-4ECF-B65F-2803758EF9F2}
+		{E7087CAC-1414-4CEB-9D4E-EA9BEAD935EF} = {2F04ED5D-AF4E-48A3-B009-9135681C3762}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {001055F6-D2B1-4B2C-9B6A-FF718F049430}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!--Sets driver type parameter-->
+    <BitPlatformName Condition="'$(Platform)' == 'x64'">64</BitPlatformName>
+    <BitPlatformName Condition="'$(Platform)' == 'Win32'">32</BitPlatformName>
+  </PropertyGroup>
+
+  <Target Name="BeforeCompile" BeforeTargets="BuildCompile">
+    <Exec Command="$(SolutionDir)scripts\windivert_stop_and_delete_service.bat"
+          WorkingDirectory="$(SolutionDir)scripts"
+          IgnoreExitCode="true"/>
+
+    <!--If using original WinDivert driver-->
+    <Copy Condition="'$(Configuration)' == 'Debug' Or '$(Configuration)' == 'Release'"
+      SourceFiles="$(SolutionDir)signed_drivers\WinDivert$(BitPlatformName).sys"
+      DestinationFolder="$(OutDir)"/>
+
+    <!--If using builded driver-->
+    <Exec Condition="'$(Configuration)' == 'Debug Builded Driver' Or '$(Configuration)' == 'Release Builded Driver'"
+          Command="$(SolutionDir)scripts\build_driver.bat"
+          WorkingDirectory="$(SolutionDir)scripts"/>
+    <Copy
+      Condition="'$(Configuration)' == 'Debug Builded Driver' Or '$(Configuration)' == 'Release Builded Driver'"
+      SourceFiles="$(SolutionDir)bin\WinDivertDriver\$(Platform)\Release\WinDivert.sys"
+      DestinationFolder="$(OutDir)"/>
+  </Target>
+
+  <Target Name="AfterBuild" AfterTargets="Build">
+    <Copy
+      SourceFiles="$(SolutionDir)bin\WinDivert\$(Platform)\$([System.Text.RegularExpressions.Regex]::Match(&quot;$(Configuration)&quot;, &quot;^([\w\-]+)&quot;))\WinDivert.dll"
+      DestinationFolder="$(OutDir)"/>
+  </Target>
+</Project>
